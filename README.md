@@ -1,5 +1,5 @@
 # anyconnect-proxy
-Dockerized openconnect client. Compatible with Cisco Anyconnect (CSD). Exposes socks5 proxy.
+Dockerized openconnect client. Compatible with Cisco AnyConnect (CSD). Exposes socks5 proxy.
 
 ## The problems with Cisco AnyConnect
 * The AnyConnect desktop client makes use of Cisco Secure Desktop (CSD), which downloads a trojan binary from the target VPN server and executes it on the host machine. For more details see: https://www.infradead.org/openconnect/csd.html
