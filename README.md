@@ -12,6 +12,10 @@ This repository provides a dockerized version of openconnect. The container acce
 
 ## Usage
 
+* Install [Docker CE](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
+* Edit user credentials and connection details in `build_and_run.sh`
+* Run `build_and_run.sh`
+
 ### Firefox
 * To proxy everything, add the proxy to the Firefox proxy configuration. 
 * If the VPN should only be used for certain hosts, a [PAC file](https://developer.mozilla.org/en-US/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) can be loaded. 
