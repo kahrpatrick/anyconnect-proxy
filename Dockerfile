@@ -1,8 +1,15 @@
-FROM ubuntu:disco
-RUN apt-get update && apt-get install -y openconnect ocproxy curl
+FROM debian:buster-slim
+RUN set -eux; \
+	apt-get update; \
+	apt-get install -y --no-install-recommends \
+		ca-certificates \
+		curl \
+		ocproxy \
+		openconnect \
+	; \
+	rm -rf /var/lib/apt/lists/*
 
-ADD entrypoint.sh /opt
-RUN chmod +x /opt/entrypoint.sh
+COPY entrypoint.sh /opt
 
 EXPOSE 9052
 
